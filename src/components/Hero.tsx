@@ -17,12 +17,6 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-8 animate-fade-in">
-          {/* Key Achievement Banner */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full border border-purple-400/30 backdrop-blur-lg">
-            <span className="text-2xl">📈</span>
-            <span className="text-white font-medium">Scaled a founder's brand from 240K → 580K in 5 months through viral storytelling</span>
-          </div>
-
           <div className="space-y-4">
             <div className="text-2xl text-purple-400 font-medium">✨ Hey, I'm</div>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
@@ -31,13 +25,19 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              I turn{' '}
-              <span className="text-purple-400 font-semibold">dead social accounts into scroll-stopping machines</span>
-              {' '}— with content that entertains, educates, and converts.
+              I transform{' '}
+              <span className="text-purple-400 font-semibold">social media accounts into audience magnets</span>
+              {' '}— with content that captivates, educates, and converts.
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              Currently reviving GrowthSchool's Instagram, YouTube, and LinkedIn — one hook at a time.
+              Currently elevating GrowthSchool's Instagram, YouTube, and LinkedIn — one viral hook at a time.
             </p>
+          </div>
+
+          {/* Key Achievement Banner - Moved to middle position */}
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full border border-purple-400/30 backdrop-blur-lg">
+            <span className="text-2xl">📈</span>
+            <span className="text-white font-medium">Scaled a founder's brand from 240K → 580K in 5 months through viral storytelling</span>
           </div>
 
           {/* Key Stats */}
@@ -62,7 +62,7 @@ const Hero = () => {
 
           <div className="flex justify-center space-x-6">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/istutipriv"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group"
@@ -70,7 +70,7 @@ const Hero = () => {
               <Instagram className="w-6 h-6 text-white group-hover:text-pink-400 transition-colors" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/stuti-pathak-b40a001a2/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group"
@@ -78,7 +78,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6 text-white group-hover:text-blue-400 transition-colors" />
             </a>
             <a
-              href="mailto:stuti@example.com"
+              href="mailto:stutipathak1111@gmail.com"
               className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group"
             >
               <Mail className="w-6 h-6 text-white group-hover:text-purple-400 transition-colors" />

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TrendingUp, Users, Target, Quote } from 'lucide-react';
+import { TrendingUp, Users, Target } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -35,7 +35,7 @@ const About = () => {
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
               I'm an <strong>Instagram growth strategist</strong> and <strong>short-form video expert</strong> with a passion for making content that moves people. 
-              Currently at GrowthSchool, I specialize in <strong>founder branding</strong> and bringing dead social media accounts back to life 
+              Currently at GrowthSchool, I specialize in <strong>founder branding</strong> and bringing dormant social media accounts back to life 
               with viral content that actually converts.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
@@ -83,21 +83,6 @@ const About = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Testimonial Section */}
-        <div className="mt-16">
-          <div className="p-8 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/30 backdrop-blur-lg max-w-4xl mx-auto">
-            <div className="flex items-start gap-4">
-              <Quote className="w-8 h-8 text-purple-400 flex-shrink-0 mt-1" />
-              <div>
-                <p className="text-lg text-white leading-relaxed mb-4">
-                  "Stuti's content 5x'd our engagement in 2 months. She just gets what makes an audience stop scrolling."
-                </p>
-                <div className="text-purple-400 font-medium">— Founder, GrowthSchool</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -31,8 +31,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "stuti@example.com",
-      link: "mailto:stuti@example.com"
+      value: "stutipathak1111@gmail.com",
+      link: "mailto:stutipathak1111@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -49,8 +49,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Instagram className="w-6 h-6" />, href: "https://instagram.com", label: "Instagram" },
-    { icon: <Linkedin className="w-6 h-6" />, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: <Instagram className="w-6 h-6" />, href: "https://instagram.com/istutipriv", label: "Instagram" },
+    { icon: <Linkedin className="w-6 h-6" />, href: "https://www.linkedin.com/in/stuti-pathak-b40a001a2/", label: "LinkedIn" },
     { icon: <Youtube className="w-6 h-6" />, href: "https://youtube.com", label: "YouTube" }
   ];
 

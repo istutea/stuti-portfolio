@@ -6,13 +6,23 @@ const Projects = () => {
   const projects = [
     {
       title: "GrowthSchool Social Revival",
-      description: "Brought dead Instagram, LinkedIn & YouTube accounts back to life with viral hooks and community-driven content",
+      description: "Brought dormant Instagram, LinkedIn & YouTube accounts back to life with viral hooks and community-driven content",
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
       metrics: ["240K → 580K followers", "Viral content creation", "Cross-platform strategy"],
       role: "Social Media Strategist",
       period: "Dec 2024 – Present",
       type: "Instagram Campaign",
       preview: "📱 IG Carousel Series"
+    },
+    {
+      title: "Vaibhav Sisinty's Instagram Growth",
+      description: "Scaled Vaibhav Sisinty's Instagram profile from 200K to 700K+ through strategic content and engagement optimization",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      metrics: ["200K → 700K+ followers", "Strategic content planning", "High engagement rates"],
+      role: "Growth Strategist",
+      period: "Ongoing",
+      type: "Instagram Growth",
+      preview: "📈 Growth Strategy"
     },
     {
       title: "Vaquill Brand Scaling",
@@ -33,36 +43,6 @@ const Projects = () => {
       period: "Ongoing",
       type: "Ad Creative",
       preview: "📊 Performance Overlay"
-    },
-    {
-      title: "Tech Content Writing",
-      description: "Wrote developer-focused blogs & docs for YC-backed startups, mastering technical storytelling",
-      image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=500&h=300&fit=crop",
-      metrics: ["B2B SaaS content", "Technical storytelling", "Developer tooling"],
-      role: "Freelance Content Writer",
-      period: "Jan 2024 – Mar 2024",
-      type: "Blog Content",
-      preview: "✍️ Script Snippets"
-    },
-    {
-      title: "OPJU TechFest Leadership",
-      description: "Convenor role where I raised sponsorships and grew event funding by 15%",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&h=300&fit=crop",
-      metrics: ["15% funding increase", "Sponsorship management", "Event leadership"],
-      role: "Convenor",
-      period: "University Project",
-      type: "Event Marketing",
-      preview: "🎪 Event Campaign"
-    },
-    {
-      title: "Community Building & Engagement",
-      description: "Grew niche communities around tech and education by using relatable, mission-driven stories",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop",
-      metrics: ["Community growth", "Authentic engagement", "Purpose-driven content"],
-      role: "Community Strategist",
-      period: "Ongoing",
-      type: "Community Content",
-      preview: "💬 Hook Examples"
     }
   ];
 

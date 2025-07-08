@@ -21,11 +21,11 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { name: "Content Strategy & Viral Hooks", level: 95, color: "from-purple-400 to-purple-600" },
-    { name: "Short-form Video (Reels, Shorts, TikTok)", level: 90, color: "from-pink-400 to-pink-600" },
-    { name: "Copywriting that Converts", level: 85, color: "from-blue-400 to-blue-600" },
-    { name: "Brand Building & Community Growth", level: 90, color: "from-green-400 to-green-600" },
-    { name: "Performance Ads (Meta + Google)", level: 80, color: "from-red-400 to-red-600" }
+    { name: "Content Strategy & Viral Hooks", color: "from-purple-400 to-purple-600" },
+    { name: "Short-form Video (Reels, Shorts, TikTok)", color: "from-pink-400 to-pink-600" },
+    { name: "Copywriting that Converts", color: "from-blue-400 to-blue-600" },
+    { name: "Brand Building & Community Growth", color: "from-green-400 to-green-600" },
+    { name: "Performance Ads (Meta + Google)", color: "from-red-400 to-red-600" }
   ];
 
   const categories = [
@@ -54,20 +54,19 @@ const Skills = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Condensed Core Competencies */}
+          {/* Core Competencies */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white mb-6">Core Competencies</h3>
             {skills.map((skill, index) => (
               <div key={index} className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-white font-medium">{skill.name}</span>
-                  <span className="text-purple-400">{skill.level}%</span>
                 </div>
                 <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
                   <div
                     className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
                     style={{
-                      width: isVisible ? `${skill.level}%` : '0%'
+                      width: isVisible ? '100%' : '0%'
                     }}
                   ></div>
                 </div>
