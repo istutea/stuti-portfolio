@@ -1,23 +1,23 @@
 
 import React from 'react';
-import { Code, Palette, Zap } from 'lucide-react';
+import { TrendingUp, Users, Target } from 'lucide-react';
 
 const About = () => {
   const features = [
     {
-      icon: <Code className="w-8 h-8" />,
-      title: "Clean Code",
-      description: "Writing maintainable and efficient code with best practices"
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "Growth-Focused",
+      description: "Scaling brand engagement by 30% through strategic content pillars and platform-native storytelling"
     },
     {
-      icon: <Palette className="w-8 h-8" />,
-      title: "Creative Design",
-      description: "Crafting beautiful user interfaces with attention to detail"
+      icon: <Users className="w-8 h-8" />,
+      title: "Community Builder",
+      description: "Built founder's personal brand from 240K → 580K+ followers with viral hooks and interactive content"
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Fast Performance",
-      description: "Optimized applications for the best user experience"
+      icon: <Target className="w-8 h-8" />,
+      title: "Conversion-Driven",
+      description: "Designed ad creatives (video + static) for Meta & Google Ads targeting both Indian and global markets"
     }
   ];
 
@@ -34,27 +34,30 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with a love for creating innovative web solutions. 
-              With expertise in modern technologies like React, Node.js, and cloud platforms, I bring 
-              ideas to life through clean code and beautiful design.
+              I'm a social-first creative strategist with a passion for making content that moves people. 
+              Currently at GrowthSchool, I specialize in bringing dead social media accounts back to life 
+              and creating viral content that actually converts.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-              projects, or sharing knowledge with the developer community. I believe in continuous learning 
-              and staying at the forefront of web development trends.
+              My work spans across Instagram, LinkedIn, and YouTube, where I craft scroll-stopping hooks, 
+              interactive reels, and community-driven content. I'm obsessed with content that highlights 
+              marginalized voices and sparks conversations around systemic change.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              My north star? Economic justice, storytelling with purpose, and scaling education access through content.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium">
-                React
+                Content Strategy
+              </span>
+              <span className="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium">
+                Social Media
               </span>
               <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
-                TypeScript
+                Ad Creatives
               </span>
               <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-full text-sm font-medium">
-                Node.js
-              </span>
-              <span className="px-4 py-2 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium">
-                Python
+                Copywriting
               </span>
             </div>
           </div>

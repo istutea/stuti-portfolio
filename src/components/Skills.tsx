@@ -21,28 +21,28 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { name: "JavaScript", level: 90, color: "from-yellow-400 to-yellow-600" },
-    { name: "React", level: 85, color: "from-blue-400 to-blue-600" },
-    { name: "TypeScript", level: 80, color: "from-blue-500 to-blue-700" },
-    { name: "Node.js", level: 85, color: "from-green-400 to-green-600" },
-    { name: "Python", level: 75, color: "from-green-500 to-green-700" },
-    { name: "CSS/Tailwind", level: 90, color: "from-purple-400 to-purple-600" },
-    { name: "MongoDB", level: 70, color: "from-green-600 to-green-800" },
-    { name: "Git/GitHub", level: 85, color: "from-gray-400 to-gray-600" }
+    { name: "Content Strategy", level: 95, color: "from-purple-400 to-purple-600" },
+    { name: "Social Media Marketing", level: 90, color: "from-pink-400 to-pink-600" },
+    { name: "Copywriting", level: 85, color: "from-blue-400 to-blue-600" },
+    { name: "Video Production", level: 80, color: "from-green-400 to-green-600" },
+    { name: "Meta Ads", level: 85, color: "from-red-400 to-red-600" },
+    { name: "Google Ads", level: 80, color: "from-yellow-400 to-yellow-600" },
+    { name: "Community Building", level: 90, color: "from-indigo-400 to-indigo-600" },
+    { name: "Analytics & Insights", level: 75, color: "from-teal-400 to-teal-600" }
   ];
 
   const categories = [
     {
-      title: "Frontend",
-      skills: ["React", "Vue.js", "Angular", "HTML5", "CSS3", "Sass", "Tailwind CSS", "JavaScript", "TypeScript"]
+      title: "Creative & Strategy",
+      skills: ["Content Strategy", "Copywriting", "Short-form Video", "Viral Hooks", "Storytelling", "Brand Voice", "Creative Direction", "Campaign Planning"]
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Express", "Python", "Django", "PHP", "MySQL", "MongoDB", "PostgreSQL", "Redis"]
+      title: "Social Media & Ads",
+      skills: ["Instagram", "LinkedIn", "YouTube", "Meta Ads", "Google Ads", "Social Analytics", "Influencer Marketing", "Community Management"]
     },
     {
-      title: "Tools & Others",
-      skills: ["Git", "Docker", "AWS", "Vercel", "Figma", "Photoshop", "REST APIs", "GraphQL", "Jest"]
+      title: "Tools & Software",
+      skills: ["Canva", "Figma", "HeyGen", "ElevenLabs", "MS Office Suite", "Analytics Tools", "Social Schedulers", "Video Editing"]
     }
   ];
 
@@ -51,7 +51,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My <span className="text-purple-400">Skills</span>
+            My <span className="text-purple-400">Zone of Genius</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
         </div>
@@ -59,7 +59,7 @@ const Skills = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Progress Bars */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-white mb-6">Technical Proficiency</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6">Core Competencies</h3>
             {skills.map((skill, index) => (
               <div key={index} className="space-y-2">
                 <div className="flex justify-between">
@@ -100,6 +100,18 @@ const Skills = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Personal Touch */}
+        <div className="mt-16 text-center">
+          <div className="p-8 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/30 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-semibold text-white mb-4">🎯 What Drives Me</h3>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              I'm obsessed with making content that moves people — especially when it highlights marginalized voices 
+              or sparks conversations around systemic change. My north star? Economic justice, storytelling with purpose, 
+              and scaling education access through content.
+            </p>
           </div>
         </div>
       </div>

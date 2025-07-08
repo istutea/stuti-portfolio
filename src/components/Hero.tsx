@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -18,27 +18,30 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-8 animate-fade-in">
           <div className="space-y-4">
+            <div className="text-2xl text-purple-400 font-medium">✨ Hey, I'm</div>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
-              Hi, I'm{' '}
               <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
                 Stuti
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              A passionate{' '}
-              <span className="text-purple-400 font-semibold">Full Stack Developer</span>
-              {' '}crafting beautiful and functional digital experiences
+            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              A{' '}
+              <span className="text-purple-400 font-semibold">social-first creative strategist</span>
+              {' '}helping brands grow online through short-form storytelling, community-building, and ad creatives that actually convert.
+            </p>
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+              Currently reviving GrowthSchool's Instagram, YouTube, and LinkedIn — one hook at a time.
             </p>
           </div>
 
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com"
+              href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group"
             >
-              <Github className="w-6 h-6 text-white group-hover:text-purple-400 transition-colors" />
+              <Instagram className="w-6 h-6 text-white group-hover:text-pink-400 transition-colors" />
             </a>
             <a
               href="https://linkedin.com"
@@ -46,10 +49,10 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group"
             >
-              <Linkedin className="w-6 h-6 text-white group-hover:text-purple-400 transition-colors" />
+              <Linkedin className="w-6 h-6 text-white group-hover:text-blue-400 transition-colors" />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:stuti@example.com"
               className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all duration-300 group"
             >
               <Mail className="w-6 h-6 text-white group-hover:text-purple-400 transition-colors" />
@@ -61,10 +64,10 @@ const Hero = () => {
               onClick={scrollToAbout}
               className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
             >
-              View My Work
+              See My Work
             </button>
             <button className="px-8 py-3 border-2 border-purple-400 text-purple-400 font-semibold rounded-full hover:bg-purple-400 hover:text-white transition-all duration-300">
-              Download CV
+              Let's Collaborate
             </button>
           </div>
         </div>
