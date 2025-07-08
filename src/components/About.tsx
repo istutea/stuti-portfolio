@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TrendingUp, Users, Target } from 'lucide-react';
+import { TrendingUp, Users, Target, Quote } from 'lucide-react';
 
 const About = () => {
   const features = [
@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Community Builder",
-      description: "Built founder's personal brand from 240K → 580K+ followers with viral hooks and interactive content"
+      description: "Grew niche communities around tech and education by using relatable, mission-driven stories — not trends for the sake of trends"
     },
     {
       icon: <Target className="w-8 h-8" />,
@@ -34,12 +34,12 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a social-first creative strategist with a passion for making content that moves people. 
-              Currently at GrowthSchool, I specialize in bringing dead social media accounts back to life 
-              and creating viral content that actually converts.
+              I'm an <strong>Instagram growth strategist</strong> and <strong>short-form video expert</strong> with a passion for making content that moves people. 
+              Currently at GrowthSchool, I specialize in <strong>founder branding</strong> and bringing dead social media accounts back to life 
+              with viral content that actually converts.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              My work spans across Instagram, LinkedIn, and YouTube, where I craft scroll-stopping hooks, 
+              As a <strong>B2B content marketer</strong>, my work spans across Instagram, LinkedIn, and YouTube, where I craft scroll-stopping hooks, 
               interactive reels, and community-driven content. I'm obsessed with content that highlights 
               marginalized voices and sparks conversations around systemic change.
             </p>
@@ -51,13 +51,13 @@ const About = () => {
                 Content Strategy
               </span>
               <span className="px-4 py-2 bg-pink-500/20 text-pink-300 rounded-full text-sm font-medium">
-                Social Media
+                Viral Hooks
               </span>
               <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium">
-                Ad Creatives
+                Short-form Video
               </span>
               <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-full text-sm font-medium">
-                Copywriting
+                Founder Branding
               </span>
             </div>
           </div>
@@ -83,6 +83,21 @@ const About = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Testimonial Section */}
+        <div className="mt-16">
+          <div className="p-8 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/30 backdrop-blur-lg max-w-4xl mx-auto">
+            <div className="flex items-start gap-4">
+              <Quote className="w-8 h-8 text-purple-400 flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-lg text-white leading-relaxed mb-4">
+                  "Stuti's content 5x'd our engagement in 2 months. She just gets what makes an audience stop scrolling."
+                </p>
+                <div className="text-purple-400 font-medium">— Founder, GrowthSchool</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

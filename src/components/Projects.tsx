@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExternalLink, TrendingUp, Users, Award } from 'lucide-react';
+import { ExternalLink, TrendingUp, Users, Award, Play, Eye } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -10,7 +10,9 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
       metrics: ["240K → 580K followers", "Viral content creation", "Cross-platform strategy"],
       role: "Social Media Strategist",
-      period: "Dec 2024 – Present"
+      period: "Dec 2024 – Present",
+      type: "Instagram Campaign",
+      preview: "📱 IG Carousel Series"
     },
     {
       title: "Vaquill Brand Scaling",
@@ -18,15 +20,19 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
       metrics: ["30% engagement increase", "Product Hunt launch", "Meta & Google Ads"],
       role: "Creative Strategist",
-      period: "Feb 2023 – Nov 2024"
+      period: "Feb 2023 – Nov 2024",
+      type: "Brand Campaign",
+      preview: "🎥 Video Ad Creative"
     },
     {
       title: "Meta & Google Ad Creatives",
       description: "Designed high-converting video and static ad creatives for Indian and global markets",
       image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=500&h=300&fit=crop",
-      metrics: ["Multi-market targeting", "Video + Static ads", "High conversion rates"],
+      metrics: ["Multi-market targeting", "2x CTR improvement", "High conversion rates"],
       role: "Creative Strategist",
-      period: "Ongoing"
+      period: "Ongoing",
+      type: "Ad Creative",
+      preview: "📊 Performance Overlay"
     },
     {
       title: "Tech Content Writing",
@@ -34,7 +40,9 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=500&h=300&fit=crop",
       metrics: ["B2B SaaS content", "Technical storytelling", "Developer tooling"],
       role: "Freelance Content Writer",
-      period: "Jan 2024 – Mar 2024"
+      period: "Jan 2024 – Mar 2024",
+      type: "Blog Content",
+      preview: "✍️ Script Snippets"
     },
     {
       title: "OPJU TechFest Leadership",
@@ -42,15 +50,19 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&h=300&fit=crop",
       metrics: ["15% funding increase", "Sponsorship management", "Event leadership"],
       role: "Convenor",
-      period: "University Project"
+      period: "University Project",
+      type: "Event Marketing",
+      preview: "🎪 Event Campaign"
     },
     {
       title: "Community Building & Engagement",
-      description: "Built engaged communities through authentic storytelling and purpose-driven content creation",
+      description: "Grew niche communities around tech and education by using relatable, mission-driven stories",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop",
       metrics: ["Community growth", "Authentic engagement", "Purpose-driven content"],
       role: "Community Strategist",
-      period: "Ongoing"
+      period: "Ongoing",
+      type: "Community Content",
+      preview: "💬 Hook Examples"
     }
   ];
 
@@ -58,6 +70,18 @@ const Projects = () => {
     const icons = [TrendingUp, Users, Award];
     const IconComponent = icons[index % icons.length];
     return <IconComponent className="w-5 h-5" />;
+  };
+
+  const getPreviewIcon = (type: string) => {
+    switch (type) {
+      case 'Instagram Campaign':
+      case 'Video Ad Creative':
+        return <Play className="w-4 h-4" />;
+      case 'Performance Overlay':
+        return <Eye className="w-4 h-4" />;
+      default:
+        return <ExternalLink className="w-4 h-4" />;
+    }
   };
 
   return (
@@ -85,6 +109,15 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                
+                {/* Preview Badge */}
+                <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full text-xs text-white">
+                  {getPreviewIcon(project.type)}
+                  <span>{project.preview}</span>
+                </div>
+
+                {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                   <div className="p-2 bg-white/20 backdrop-blur-lg rounded-full">
                     <ExternalLink className="w-5 h-5 text-white" />

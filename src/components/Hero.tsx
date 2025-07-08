@@ -17,6 +17,12 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-8 animate-fade-in">
+          {/* Key Achievement Banner */}
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full border border-purple-400/30 backdrop-blur-lg">
+            <span className="text-2xl">📈</span>
+            <span className="text-white font-medium">Scaled a founder's brand from 240K → 580K in 5 months through viral storytelling</span>
+          </div>
+
           <div className="space-y-4">
             <div className="text-2xl text-purple-400 font-medium">✨ Hey, I'm</div>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
@@ -25,13 +31,33 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              A{' '}
-              <span className="text-purple-400 font-semibold">social-first creative strategist</span>
-              {' '}helping brands grow online through short-form storytelling, community-building, and ad creatives that actually convert.
+              I turn{' '}
+              <span className="text-purple-400 font-semibold">dead social accounts into scroll-stopping machines</span>
+              {' '}— with content that entertains, educates, and converts.
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Currently reviving GrowthSchool's Instagram, YouTube, and LinkedIn — one hook at a time.
             </p>
+          </div>
+
+          {/* Key Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <div className="p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10">
+              <div className="text-2xl font-bold text-purple-400">+340K</div>
+              <div className="text-sm text-gray-300">Followers in 5 Months</div>
+            </div>
+            <div className="p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10">
+              <div className="text-2xl font-bold text-pink-400">30%</div>
+              <div className="text-sm text-gray-300">Engagement Growth</div>
+            </div>
+            <div className="p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10">
+              <div className="text-2xl font-bold text-blue-400">2x</div>
+              <div className="text-sm text-gray-300">Ad CTR Improvement</div>
+            </div>
+            <div className="p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10">
+              <div className="text-2xl font-bold text-green-400">15%</div>
+              <div className="text-sm text-gray-300">Sponsorship Uplift</div>
+            </div>
           </div>
 
           <div className="flex justify-center space-x-6">

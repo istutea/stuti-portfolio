@@ -21,20 +21,17 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { name: "Content Strategy", level: 95, color: "from-purple-400 to-purple-600" },
-    { name: "Social Media Marketing", level: 90, color: "from-pink-400 to-pink-600" },
-    { name: "Copywriting", level: 85, color: "from-blue-400 to-blue-600" },
-    { name: "Video Production", level: 80, color: "from-green-400 to-green-600" },
-    { name: "Meta Ads", level: 85, color: "from-red-400 to-red-600" },
-    { name: "Google Ads", level: 80, color: "from-yellow-400 to-yellow-600" },
-    { name: "Community Building", level: 90, color: "from-indigo-400 to-indigo-600" },
-    { name: "Analytics & Insights", level: 75, color: "from-teal-400 to-teal-600" }
+    { name: "Content Strategy & Viral Hooks", level: 95, color: "from-purple-400 to-purple-600" },
+    { name: "Short-form Video (Reels, Shorts, TikTok)", level: 90, color: "from-pink-400 to-pink-600" },
+    { name: "Copywriting that Converts", level: 85, color: "from-blue-400 to-blue-600" },
+    { name: "Brand Building & Community Growth", level: 90, color: "from-green-400 to-green-600" },
+    { name: "Performance Ads (Meta + Google)", level: 80, color: "from-red-400 to-red-600" }
   ];
 
   const categories = [
     {
       title: "Creative & Strategy",
-      skills: ["Content Strategy", "Copywriting", "Short-form Video", "Viral Hooks", "Storytelling", "Brand Voice", "Creative Direction", "Campaign Planning"]
+      skills: ["Content Strategy", "Viral Hooks", "Short-form Video", "Storytelling", "Brand Voice", "Creative Direction", "Campaign Planning"]
     },
     {
       title: "Social Media & Ads",
@@ -57,7 +54,7 @@ const Skills = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Progress Bars */}
+          {/* Condensed Core Competencies */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white mb-6">Core Competencies</h3>
             {skills.map((skill, index) => (
