@@ -3,8 +3,8 @@ import React from 'react';
 import { ArrowDown, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToProjects = () => {
+    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-8 animate-fade-in">
           <div className="space-y-4">
-            <div className="text-2xl text-purple-400 font-medium">✨ Hey, I'm</div>
+            <div className="text-2xl text-purple-400 font-medium">I'm</div>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
               <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
                 Stuti
@@ -32,12 +32,6 @@ const Hero = () => {
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Currently elevating GrowthSchool's Instagram, YouTube, and LinkedIn — one viral hook at a time.
             </p>
-          </div>
-
-          {/* Key Achievement Banner - Moved to middle position */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full border border-purple-400/30 backdrop-blur-lg">
-            <span className="text-2xl">📈</span>
-            <span className="text-white font-medium">Scaled a founder's brand from 240K → 580K in 5 months through viral storytelling</span>
           </div>
 
           {/* Key Stats */}
@@ -87,23 +81,13 @@ const Hero = () => {
 
           <div className="flex justify-center space-x-4">
             <button 
-              onClick={scrollToAbout}
+              onClick={scrollToProjects}
               className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
             >
               See My Work
             </button>
-            <button className="px-8 py-3 border-2 border-purple-400 text-purple-400 font-semibold rounded-full hover:bg-purple-400 hover:text-white transition-all duration-300">
-              Let's Collaborate
-            </button>
           </div>
         </div>
-
-        <button 
-          onClick={scrollToAbout}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-        >
-          <ArrowDown className="w-6 h-6 text-white/60" />
-        </button>
       </div>
     </section>
   );

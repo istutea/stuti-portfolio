@@ -72,9 +72,9 @@ const Projects = () => {
   const projects = [
     {
       id: 'growthschool',
-      title: "GrowthSchool Social Revival",
+      title: "Creative Strategy at GS",
       description: "Brought dormant Instagram, LinkedIn & YouTube accounts back to life with viral hooks and community-driven content",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
+      image: "images/Growthschool_Project_logo.png",
       metrics: ["240K → 580K followers", "Viral content creation", "Cross-platform strategy"],
       role: "Social Media Strategist",
       period: "Dec 2024 – Present",
@@ -86,7 +86,7 @@ const Projects = () => {
       id: 'vaibhav',
       title: "Vaibhav Sisinty's Instagram Growth",
       description: "Scaled Vaibhav Sisinty's Instagram profile from 200K to 700K+ through strategic content and engagement optimization",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      image: "images/vaibhav_sisinty_log.jpg",
       metrics: ["200K → 700K+ followers", "Strategic content planning", "High engagement rates"],
       role: "Growth Strategist",
       period: "Ongoing",
@@ -98,25 +98,27 @@ const Projects = () => {
       id: 'vaquill',
       title: "Vaquill Brand Scaling",
       description: "Scaled brand engagement by 30% through strategic content pillars and platform-native storytelling",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      image: "images/vaquill_logo.jpeg",
       metrics: ["30% engagement increase", "Product Hunt launch", "Meta & Google Ads"],
       role: "Creative Strategist",
       period: "Feb 2023 – Nov 2024",
       type: "Brand Campaign",
       preview: "🎥 Video Ad Creative",
-      hasReels: false
+      hasReels: false,
+      link: "https://docs.google.com/document/d/1ETBZrHLBrhCJ4flcBRM45o3206DCEe836VARDW5PmgI/edit?usp=sharing"
     },
     {
       id: 'meta-google',
       title: "Meta & Google Ad Creatives",
       description: "Designed high-converting video and static ad creatives for Indian and global markets",
-      image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=500&h=300&fit=crop",
+      image: "images/meta_google_ads_logo.png",
       metrics: ["Multi-market targeting", "2x CTR improvement", "High conversion rates"],
       role: "Creative Strategist",
       period: "Ongoing",
       type: "Ad Creative",
       preview: "📊 Performance Overlay",
-      hasReels: false
+      hasReels: false,
+      link: "https://docs.google.com/document/d/1gx2cOWrbqJg2T8OAlPnWKcy8UJbaHwTckTr2sNtxQ34/edit?usp=sharing"
     }
   ];
 
@@ -124,6 +126,8 @@ const Projects = () => {
     if (project.hasReels) {
       setSelectedProject(project);
       setModalOpen(true);
+    } else if (project.link) {
+      window.open(project.link, '_blank');
     }
   };
 
@@ -164,7 +168,7 @@ const Projects = () => {
               <div
                 key={index}
                 className={`group bg-white/5 backdrop-blur-lg rounded-xl overflow-hidden border border-white/10 hover:border-purple-400/30 transition-all duration-300 hover:transform hover:scale-105 ${
-                  project.hasReels ? 'cursor-pointer' : ''
+                  project.hasReels || project.link ? 'cursor-pointer' : ''
                 }`}
                 onClick={() => handleProjectClick(project)}
               >

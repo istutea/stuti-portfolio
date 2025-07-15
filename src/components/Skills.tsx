@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { skillCategories } from '@/lib/skills-data';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,21 +27,6 @@ const Skills = () => {
     { name: "Copywriting that Converts", color: "from-blue-400 to-blue-600" },
     { name: "Brand Building & Community Growth", color: "from-green-400 to-green-600" },
     { name: "Performance Ads (Meta + Google)", color: "from-red-400 to-red-600" }
-  ];
-
-  const categories = [
-    {
-      title: "Creative & Strategy",
-      skills: ["Content Strategy", "Viral Hooks", "Short-form Video", "Storytelling", "Brand Voice", "Creative Direction", "Campaign Planning"]
-    },
-    {
-      title: "Social Media & Ads",
-      skills: ["Instagram", "LinkedIn", "YouTube", "Meta Ads", "Google Ads", "Social Analytics", "Influencer Marketing", "Community Management"]
-    },
-    {
-      title: "Tools & Software",
-      skills: ["Canva", "Figma", "HeyGen", "ElevenLabs", "MS Office Suite", "Analytics Tools", "Social Schedulers", "Video Editing"]
-    }
   ];
 
   return (
@@ -76,22 +62,28 @@ const Skills = () => {
 
           {/* Skill Categories */}
           <div className="space-y-8">
-            {categories.map((category, index) => (
+            {skillCategories.map((category, index) => (
               <div
                 key={index}
                 className="p-6 bg-white/5 backdrop-blur-lg rounded-xl border border-white/10"
               >
-                <h3 className="text-xl font-semibold text-white mb-4">
+                <h3 className="text-xl font-semibold text-white mb-2">
                   {category.title}
                 </h3>
+                <p className="text-gray-400 mb-4">{category.description}</p>
                 <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="px-3 py-2 bg-purple-500/20 text-purple-300 rounded-lg text-sm font-medium hover:bg-purple-500/30 transition-colors cursor-default"
-                    >
-                      {skill}
-                    </span>
+                    <div key={skillIndex} className="relative group">
+                      <span
+                        className="px-3 py-2 bg-purple-500/20 text-purple-300 rounded-lg text-sm font-medium hover:bg-purple-500/30 transition-colors cursor-default"
+                      >
+                        {skill.name}
+                      </span>
+                      <div className="absolute bottom-full mb-2 w-64 p-3 bg-gray-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                        {skill.description}
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-gray-800"></div>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>

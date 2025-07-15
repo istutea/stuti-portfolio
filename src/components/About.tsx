@@ -34,17 +34,21 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm an <strong>Instagram growth strategist</strong> and <strong>short-form video expert</strong> with a passion for making content that moves people. 
-              Currently at GrowthSchool, I specialize in <strong>founder branding</strong> and bringing dormant social media accounts back to life 
-              with viral content that actually converts.
+              I’m a <strong>Social Media Manager</strong> turned <strong>Creative Strategist</strong> with a passion for creating content that not only stops the scroll—but starts conversations. 
+              My strength lies in building founder-led brands and reviving social accounts with content that drives both engagement and conversions.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              As a <strong>B2B content marketer</strong>, my work spans across Instagram, LinkedIn, and YouTube, where I craft scroll-stopping hooks, 
-              interactive reels, and community-driven content. I'm obsessed with content that highlights 
-              marginalized voices and sparks conversations around systemic change.
+              At <strong>Vaquill</strong>, I worked directly with the founder to craft a sharp, purpose-driven personal brand across Instagram and LinkedIn. 
+              At <strong>GrowthSchool</strong>, I led content efforts for both the founder’s personal channels and the brand’s main Instagram page—developing a 
+              consistent voice, driving community engagement, and building topical, high-performing reels.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              My north star? Economic justice, storytelling with purpose, and scaling education access through content.
+              My background spans content writing, video ideation, and scriptwriting across Instagram, YouTube, and LinkedIn. Whether it’s structuring a <strong>viral hook</strong>,
+               editing a compelling narrative, or turning a founder’s thought leadership into shareable content—I bring both <strong>strategy</strong> and <strong>soul</strong> to the process.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              At the core of my work is a commitment to <strong>storytelling that feels real</strong> . I'm especially drawn to content that challenges systems, centers marginalized voices, and scales access to knowledge.
+               Content, for me, is not just about visibility—it’s about <strong>purpose, clarity, and impact.</strong>
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium">
