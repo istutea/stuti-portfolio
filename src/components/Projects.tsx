@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, TrendingUp, Users, Award, Play, Eye } from 'lucide-react';
 import ReelsModal from './ReelsModal';
@@ -7,55 +6,65 @@ const Projects = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
-  // Dummy reels data - you can replace these URLs with your actual embedded reel links
+  // Updated reels data with actual Instagram links
   const projectReels = {
     growthschool: [
       {
         id: '1',
-        title: 'Instagram Revival Strategy',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        title: 'Instagram Growth Strategy',
+        embedUrl: 'https://www.instagram.com/reel/DGiRLlhzAiV/embed'
       },
       {
         id: '2',
         title: 'Viral Content Creation',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DGnj5SFTTXl/embed'
       },
       {
         id: '3',
         title: 'Community Engagement',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DHQurXAS70w/embed'
       },
       {
         id: '4',
         title: 'Cross-Platform Strategy',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DJ52r1ou8sM/embed'
       }
     ],
     vaibhav: [
       {
         id: '1',
         title: 'Growth Strategy Implementation',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DIdwtewRyGt/embed'
       },
       {
         id: '2',
         title: 'Content Optimization',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DGVmlHxTNhb/embed'
       },
       {
         id: '3',
         title: 'Engagement Tactics',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DFh6LrGiCQs/embed'
       },
       {
         id: '4',
         title: 'Follower Acquisition',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DFXl7-wTu6T/embed'
       },
       {
         id: '5',
         title: 'Analytics & Insights',
-        embedUrl: 'https://www.instagram.com/reel/C7VXqYPyFfD/embed'
+        embedUrl: 'https://www.instagram.com/reel/DFP2hrFzHhy/embed'
+      },
+      {
+        id: '6',
+        title: 'Content Performance',
+        embedUrl: 'https://www.instagram.com/reel/DEyvSJVzxv6/embed'
+      },
+      {
+        id: '7',
+        title: 'Strategic Growth',
+        embedUrl: 'https://www.instagram.com/reel/DEw83TJT3tX/embed'
       }
     ]
   };
